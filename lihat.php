@@ -44,7 +44,7 @@ if(isset($_POST['submit'])) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Lihat Pengaduan | Dispendukcapil Bangkalan</title>
+    <title>Lihat Pengaduan | Kecamatan Sumedang Utara</title>
     <link rel="shortcut icon" href="images/smd/logo1.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -126,7 +126,7 @@ if(isset($_POST['submit'])) {
                         </li>
                         <!-- <li><a href="faq">FAQ</a></li> -->
                         <!-- <li><a href="bantuan">BANTUAN</a></li> -->
-                        <li><a href="kontak">KONTAK</a></li>
+                        <!-- <li><a href="kontak">KONTAK</a></li> -->
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->

@@ -92,7 +92,7 @@ CREATE TABLE `laporan` (
 --
 
 INSERT INTO `laporan` (`id`, `nama`, `nik`, `email`, `telpon`, `alamat`, `tujuan`, `isi`, `tanggal`, `status`) VALUES
-(100, 'Wahid Ari', 0, 'wahiid.ari@gmail.com', '087850866665', 'Mlajah', 1, 'Apakah Aplikasi Pengaduan Masyarakat Dispendukcapil Bangkalan ini?', '2018-05-23 06:17:29', 'Ditanggapi'),
+(100, 'Wahid Ari', 0, 'wahiid.ari@gmail.com', '087850866665', 'Mlajah', 1, 'Apakah Aplikasi Pengaduan Masyarakat Kecamatan Sumedang Utara ini?', '2018-05-23 06:17:29', 'Ditanggapi'),
 (101, 'Surya Ray', 0, 'ray@gmail.com', '087123123444', 'Bangkalan', 2, 'Apakah nomor pengaduan itu dan apa yang harus saya lakukan terhadap nomor pengaduan ini? ', '2018-05-23 07:25:00', 'Ditanggapi'),
 (102, 'Faris Ikhsan', 0, 'faris@gmail.com', '087865786345', 'Bangkalan', 4, 'Apakah kerahasiaan identitas saya sebagai pengadu/pelapor terjaga? ', '2018-05-23 07:37:55', 'Menunggu'),
 (103, 'Robbi Pradiantoro', 0, 'robi@gmail.com', '081233824715', 'Bangkalan', 3, 'Berapa lama respon atas pengaduan yang disampaikan diberikan kepada pelapor? ', '2018-06-09 06:40:44', 'Ditanggapi'),
@@ -119,7 +119,7 @@ CREATE TABLE `tanggapan` (
 --
 
 INSERT INTO `tanggapan` (`id_tanggapan`, `id_laporan`, `admin`, `isi_tanggapan`, `tanggal_tanggapan`) VALUES
-(1, 100, 'admin', 'Aplikasi Pengaduan Masyarakat Dispendukcapil Bangkalan adalah aplikasi pengelolaan dan tindak lanjut pengaduan serta pelaporan hasil pengelolaan pengaduan yang disediakan oleh Dispendukcapil Bangkalan sebagai salah satu sarana bagi setiap pejabat/pegawai Dispendukcapil Bangkalan sebagai pihak internal maupun masyarakat luas pengguna layanan Dispendukcapil Bangkalan sebagai pihak eksternal untuk melaporkan dugaan adanya pelanggaran dan/atau ketidakpuasan terhadap pelayanan yang dilakukan/diberikan oleh pejabat/pegawai Dispendukcapil Bangkalan.', '2018-03-25 14:44:57'),
+(1, 100, 'admin', 'Aplikasi Pengaduan Masyarakat Kecamatan Sumedang Utara adalah aplikasi pengelolaan dan tindak lanjut pengaduan serta pelaporan hasil pengelolaan pengaduan yang disediakan oleh Kecamatan Sumedang Utara sebagai salah satu sarana bagi setiap pejabat/pegawai Kecamatan Sumedang Utara sebagai pihak internal maupun masyarakat luas pengguna layanan Kecamatan Sumedang Utara sebagai pihak eksternal untuk melaporkan dugaan adanya pelanggaran dan/atau ketidakpuasan terhadap pelayanan yang dilakukan/diberikan oleh pejabat/pegawai Kecamatan Sumedang Utara.', '2018-03-25 14:44:57'),
 (2, 101, 'Admin', 'Nomor pengaduan adalah nomor yang digunakan sebagai identitas dari sebuah laporan atau pengaduan yang didapatkan ketika pelapor menyampaikan laporan melalui aplikasi ini. Simpan dengan baik nomor pengaduan yang Anda peroleh, jangan sampai tercecer dan diketahui oleh pihak yang tidak berhak karena pelayanan untuk mengetahui status tindak lanjut pengaduan yang disampaikan hanya dapat diberikan melalui nomor pengaduan tersebut.', '2018-05-23 07:26:11'),
 (3, 103, 'Admin', 'Sesuai dengan KMK 149 tahun 2011 jawaban/respon atas pengaduan yang disampaikan wajib diberikan dalam kurun waktu paling lambat 30 (tiga puluh) hari terhitung sejak pengaduan diterima.', '2018-06-09 06:40:44'),
 (4, 103, 'Admin', 'Untuk respon yang disampaikan tertulis melalui surat dapat diberikan apabila pelapor mencantumkan identitas secara jelas (nama dan alamat koresponden). Untuk respon dari media pengaduan lainnya akan disampaikan dan diberikan sesuai identitas pelapor yang dicantumkan dalam media pengaduan tersebut.', '2018-06-09 06:40:59'),

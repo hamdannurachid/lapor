@@ -56,7 +56,7 @@
 
 <body class="fixed-nav sticky-footer" id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav" >
         <a class="navbar-brand" href="index">Dispenduk Bangkalan</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -254,6 +254,7 @@
                             <thead>
                                 <tr>
                                     <th>Nama</th>
+                                    <th>NIK</th>
                                     <th>Email</th>
                                     <th>Telpon</th>
                                     <th>Alamat</th>
@@ -286,6 +287,7 @@
                                 ?>
                                 <tr>
                                     <td><?php echo $key['nama']; ?></td>
+                                    <td><?php echo $key['nik']; ?></td>
                                     <td><?php echo $key['email']; ?></td>
                                     <td><?php echo $key['telpon']; ?></td>
                                     <td><?php echo $key['alamat']; ?></td>

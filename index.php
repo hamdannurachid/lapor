@@ -22,7 +22,7 @@ function RandomAvatar(){
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Dispendukcapil Bangkalan</title>
+    <title>Kecamatan Sumedang Utara</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -90,7 +90,7 @@ function RandomAvatar(){
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="">
-                        <img alt="Brand" src="images/bangkalan.png">
+                        <img alt="Brand" src="images/smd/logo1.png">
                     </a>
                 </div>
 
@@ -102,7 +102,7 @@ function RandomAvatar(){
                         <li><a href="lihat">LIHAT PENGADUAN</a></li>
                         <li><a href="cara">CARA</a></li>
                         <li class="dropdown">
-                            <a href="profildinas" class="dropdown-toggle" data-toggle="dropdown">PROFIL DINAS <span class="caret"></span></a>
+                            <a href="profildinas" class="dropdown-toggle" data-toggle="dropdown">PROFIL DINAS <span classheader_01.jpg="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="profildinas">Profil Dinas</a></li>
                                 <li class="divider"></li>
@@ -111,10 +111,12 @@ function RandomAvatar(){
                                 <li><a href="profildinas">Struktur Organisasi</a></li>
                                 <li class="divider"></li>
                                 <li><a href="profildinas">Motto / Maklumat Pelayanan</a></li>
+                                <li class="divider"></li>
+                                    <li><a href="profildinas">Peta Lokasi</a></li>
                             </ul>
                         </li>
-                        <li><a href="faq">FAQ</a></li>
-                        <li><a href="bantuan">BANTUAN</a></li>
+                        <!-- <li><a href="faq">FAQ</a></li> -->
+                        <!-- <li><a href="bantuan">BANTUAN</a></li> -->
                         <li><a href="kontak">KONTAK</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -135,22 +137,22 @@ function RandomAvatar(){
 
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="images/header_02.jpg" alt="...">
+                <img src="images/smd/header_02.jpg" alt="...">
                 <div class="carousel-caption welcome">
                     <h2 class="animated bounceInRight">Selamat Datang</h2>
-                    <h3 class="animated bounceInLeft">Website Pengaduan Masyarakat Dispendukcapil Bangkalan</h3>
+                    <h3 class="animated bounceInLeft">Website Pengaduan Masyarakat Kecamatan Sumedang Utara</h3>
                 </div>
             </div>
             <div class="item">
-                <img src="images/header_01.jpg" alt="...">
+                <img src="images/smd/pejabat.jpg" alt="...">
                 <div class="carousel-caption">
-                    <h2 class="animated bounceInDown">Pejabat</h2>
+                    <h2 class="animated bounceInDown">Camat & Staf</h2>
                 </div>
             </div>
             <div class="item">
-                <img src="images/header_03.jpg" alt="...">
+                <img src="images/smd/masjid.jpg" alt="...">
                 <div class="carousel-caption">
-                    <h2 class="animated bounceInUp">Pengumuman</h2>
+                    <h2 class="animated bounceInUp">Mesjid Agung Tegal Kalong</h2>
                 </div>
             </div>
         </div>
@@ -217,54 +219,47 @@ function RandomAvatar(){
                 <div class="col-md-4">
                     <br>
                     <!-- header text social-feed -->
-                    <h3 class="text-center h3-custom">Social Feed</h3>
+                    <h3 class="text-center h3-custom">Sosial Media Feed</h3>
                     <hr class="custom-line"/>
                     <!-- end header text social-feed -->
                     <!-- Twitter Feed -->
                     <div class="box">
                         <div class="box-icon shadow">
-                            <span class="fa fa-2x fa-twitter"></span>
+                            <span class="fa fa-2x fa-youtube"></span>
                         </div>
                         <div class="info">
-                            <h3 class="text-center">twitter</h3>
-                            <a class="twitter-timeline" href="https://twitter.com/disdukcapilbkl?ref_src=twsrc%5Etfw" data-width="500" data-height="300">Tweets by disdukcapilbkl</a>
-                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            <h3 class="text-center">Youtube</h3>
+                            Video by Sumedang Utara
+                            
+                            <iframe width="320" height="215"
+                            src="https://www.youtube.com/embed/PBtGOL_wD6w" clas="embed-responsive-item">
+                            </iframe>
+                            <hr>
+                            <iframe width="320" height="215"
+                            src="https://www.youtube.com/embed/WA0bL6gFLG0" clas="embed-responsive-item">
+                            </iframe>
+
                         </div>
                     </div>
                     <!-- End Twitter Feed -->
                     <hr>
                     <!-- Facebook Feed -->
-                    <div class="box">
+                    <!-- <div class="box">
                         <div class="box-icon shadow">
                             <span class="fa fa-2x fa-facebook"></span>
                         </div>
                         <div class="info">
                             <h3 class="text-center">facebook</h3>
-                            <div class="fb-page" data-height="300" data-width="500" data-href="https://www.facebook.com/dispendukcapilbkl" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                                <blockquote cite="https://www.facebook.com/dispendukcapilbkl" class="fb-xfbml-parse-ignore">
-                                    <a href="https://www.facebook.com/dispendukcapilbkl">Dispenduk dan Capil Kabupaten Bangkalan</a>
+                            <div class="fb-page" data-height="300" data-width="500" data-href="https://www.facebook.com/people/Kecamatan-Sumedang-Utara/100011406685555" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                <blockquote cite="https://www.facebook.com/people/Kecamatan-Sumedang-Utara/100011406685555" class="fb-xfbml-parse-ignore">
+                                    <a href="https://www.facebook.com/people/Kecamatan-Sumedang-Utara/100011406685555">Kecamatan Sumedang Utara</a>
                                 </blockquote>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- End Facebook Feed -->
                     <hr>
-                    <!-- Facebook Feed -->
-                    <div class="box">
-                        <div class="box-icon shadow">
-                            <span class="fa fa-2x fa-rss"></span>
-                        </div>
-                        <div class="info">
-                            <h3 class="text-center">link</h3>
-                            <ul class="list-group">
-                                <li class="list-group-item list-group-item-success"><a href="http://www.bangkalankab.go.id/v4/">Website Pemerintah Bangkalan</a></li>
-                                <li class="list-group-item list-group-item-info"><a href="http://kominfo.bangkalankab.go.id/">Website Diskominfo Bangkalan</a></li>
-                                <li class="list-group-item list-group-item-warning"><a href="http://dispendukcapilbkl.com/">Website Dispendukcapil Bangkalan</a></li>
-                                <li class="list-group-item list-group-item-danger"><a href="http://bappeda.bangkalankab.go.id/">Website Bappeda Bangkalan</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- End Facebook Feed -->
+                    
                 </div>
                 <!-- End Social Media Feed -->
             </div>
@@ -310,8 +305,8 @@ function RandomAvatar(){
                     </li>
                 </ul>
                 <p class="mb-0">
-                    Jalan Soekarno-Hatta No 50
-                    <br>Bangkalan, Jawa Timur
+                    Jl. Pendopo Tegal Kalong No.1,
+                    <br>Talun, Kec. Sumedang Utara, Kabupaten Sumedang, Jawa Barat 45621
                 </p>
             </div>
             <div class="col-md-4 mb-5 mb-lg-0">
@@ -325,13 +320,13 @@ function RandomAvatar(){
                 </ul>
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item">
-                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/dispendukcapilbkl/">
+                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/people/Kecamatan-Sumedang-Utara/100011406685555">
                             <i class="fa fa-fw fa-facebook"></i>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/disdukcapilbkl">
-                            <i class="fa fa-fw fa-twitter"></i>
+                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.youtube.com/channel/UCgjKqp2w_P8J0JMhs5mZX8g">
+                            <i class="fa fa-fw fa-youtube"></i>
                         </a>
                     </li>
                 </ul>
@@ -346,9 +341,9 @@ function RandomAvatar(){
                     </li>
                 </ul>
                 <p class="mb-0">
-                    031-3095331 <br>
-                    dispendukcapil@bangkalankab.go.id <br>
-                    dispendukcapil.bangkalan@gmail.com
+                    (0261) 201632 <br>
+                    kec.sumedang.utara@gmail.com <br>
+                    Senin - Jumat: 9:00 AM to 5:00 PM
                 </p>
             </div>
         </div>
@@ -356,7 +351,7 @@ function RandomAvatar(){
     <!-- /footer -->
 
     <div class="copyright py-4 text-center text-white">
-        <small>v-6.0 | Copyright &copy; Dispendukcapil Bangkalan 2018</small>
+        <small>Copyright &copy; Kecamatan Sumedang Utara 2020</small>
     </div>
     <!-- shadow -->
 </div>

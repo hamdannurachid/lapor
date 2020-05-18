@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 09, 2018 at 08:43 AM
--- Server version: 10.1.28-MariaDB
--- PHP Version: 7.1.10
+-- Generation Time: May 18, 2020 at 04:33 AM
+-- Server version: 10.1.31-MariaDB
+-- PHP Version: 7.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -77,6 +77,7 @@ INSERT INTO `divisi` (`id_divisi`, `nama_divisi`) VALUES
 CREATE TABLE `laporan` (
   `id` int(11) NOT NULL,
   `nama` varchar(64) COLLATE utf8_bin NOT NULL,
+  `nik` int(18) NOT NULL,
   `email` varchar(64) COLLATE utf8_bin NOT NULL,
   `telpon` varchar(12) COLLATE utf8_bin NOT NULL,
   `alamat` varchar(256) COLLATE utf8_bin NOT NULL,
@@ -90,11 +91,14 @@ CREATE TABLE `laporan` (
 -- Dumping data for table `laporan`
 --
 
-INSERT INTO `laporan` (`id`, `nama`, `email`, `telpon`, `alamat`, `tujuan`, `isi`, `tanggal`, `status`) VALUES
-(100, 'Wahid Ari', 'wahiid.ari@gmail.com', '087850866665', 'Mlajah', 1, 'Apakah Aplikasi Pengaduan Masyarakat Dispendukcapil Bangkalan ini?', '2018-05-23 06:17:29', 'Ditanggapi'),
-(101, 'Surya Ray', 'ray@gmail.com', '087123123444', 'Bangkalan', 2, 'Apakah nomor pengaduan itu dan apa yang harus saya lakukan terhadap nomor pengaduan ini? ', '2018-05-23 07:25:00', 'Ditanggapi'),
-(102, 'Faris Ikhsan', 'faris@gmail.com', '087865786345', 'Bangkalan', 4, 'Apakah kerahasiaan identitas saya sebagai pengadu/pelapor terjaga? ', '2018-05-23 07:37:55', 'Menunggu'),
-(103, 'Robbi Pradiantoro', 'robi@gmail.com', '081233824715', 'Bangkalan', 3, 'Berapa lama respon atas pengaduan yang disampaikan diberikan kepada pelapor? ', '2018-06-09 06:40:44', 'Ditanggapi');
+INSERT INTO `laporan` (`id`, `nama`, `nik`, `email`, `telpon`, `alamat`, `tujuan`, `isi`, `tanggal`, `status`) VALUES
+(100, 'Wahid Ari', 0, 'wahiid.ari@gmail.com', '087850866665', 'Mlajah', 1, 'Apakah Aplikasi Pengaduan Masyarakat Dispendukcapil Bangkalan ini?', '2018-05-23 06:17:29', 'Ditanggapi'),
+(101, 'Surya Ray', 0, 'ray@gmail.com', '087123123444', 'Bangkalan', 2, 'Apakah nomor pengaduan itu dan apa yang harus saya lakukan terhadap nomor pengaduan ini? ', '2018-05-23 07:25:00', 'Ditanggapi'),
+(102, 'Faris Ikhsan', 0, 'faris@gmail.com', '087865786345', 'Bangkalan', 4, 'Apakah kerahasiaan identitas saya sebagai pengadu/pelapor terjaga? ', '2018-05-23 07:37:55', 'Menunggu'),
+(103, 'Robbi Pradiantoro', 0, 'robi@gmail.com', '081233824715', 'Bangkalan', 3, 'Berapa lama respon atas pengaduan yang disampaikan diberikan kepada pelapor? ', '2018-06-09 06:40:44', 'Ditanggapi'),
+(104, 'kjjkj', 0, 'jjkjk@kdjkl.dsdi', '111111111111', 'jkhjk kj jkj ', 1, 'dsdsdsdsjsdkj sd', '2020-04-20 10:02:55', 'Ditanggapi'),
+(105, 'asasasnamnk', 0, 'kjkj@sjaks.dshdhh', '111111111111', 'jhjhjkhhj', 1, 'hhdsjkdksjdk', '2020-05-18 01:27:02', 'Menunggu'),
+(106, 'Hamdan Nurachid', 2147483647, 'admin@desa.id', '111111111111', 'h', 3, 'dsdsds', '2020-05-18 01:45:20', 'Ditanggapi');
 
 -- --------------------------------------------------------
 
@@ -118,7 +122,9 @@ INSERT INTO `tanggapan` (`id_tanggapan`, `id_laporan`, `admin`, `isi_tanggapan`,
 (1, 100, 'admin', 'Aplikasi Pengaduan Masyarakat Dispendukcapil Bangkalan adalah aplikasi pengelolaan dan tindak lanjut pengaduan serta pelaporan hasil pengelolaan pengaduan yang disediakan oleh Dispendukcapil Bangkalan sebagai salah satu sarana bagi setiap pejabat/pegawai Dispendukcapil Bangkalan sebagai pihak internal maupun masyarakat luas pengguna layanan Dispendukcapil Bangkalan sebagai pihak eksternal untuk melaporkan dugaan adanya pelanggaran dan/atau ketidakpuasan terhadap pelayanan yang dilakukan/diberikan oleh pejabat/pegawai Dispendukcapil Bangkalan.', '2018-03-25 14:44:57'),
 (2, 101, 'Admin', 'Nomor pengaduan adalah nomor yang digunakan sebagai identitas dari sebuah laporan atau pengaduan yang didapatkan ketika pelapor menyampaikan laporan melalui aplikasi ini. Simpan dengan baik nomor pengaduan yang Anda peroleh, jangan sampai tercecer dan diketahui oleh pihak yang tidak berhak karena pelayanan untuk mengetahui status tindak lanjut pengaduan yang disampaikan hanya dapat diberikan melalui nomor pengaduan tersebut.', '2018-05-23 07:26:11'),
 (3, 103, 'Admin', 'Sesuai dengan KMK 149 tahun 2011 jawaban/respon atas pengaduan yang disampaikan wajib diberikan dalam kurun waktu paling lambat 30 (tiga puluh) hari terhitung sejak pengaduan diterima.', '2018-06-09 06:40:44'),
-(4, 103, 'Admin', 'Untuk respon yang disampaikan tertulis melalui surat dapat diberikan apabila pelapor mencantumkan identitas secara jelas (nama dan alamat koresponden). Untuk respon dari media pengaduan lainnya akan disampaikan dan diberikan sesuai identitas pelapor yang dicantumkan dalam media pengaduan tersebut.', '2018-06-09 06:40:59');
+(4, 103, 'Admin', 'Untuk respon yang disampaikan tertulis melalui surat dapat diberikan apabila pelapor mencantumkan identitas secara jelas (nama dan alamat koresponden). Untuk respon dari media pengaduan lainnya akan disampaikan dan diberikan sesuai identitas pelapor yang dicantumkan dalam media pengaduan tersebut.', '2018-06-09 06:40:59'),
+(5, 104, 'Admin', 'hashahsa hahsajhsasa sj\r\n', '2020-04-20 10:02:54'),
+(6, 106, 'Admin', 'eerererererererere', '2020-05-18 01:45:19');
 
 --
 -- Indexes for dumped tables
@@ -158,7 +164,7 @@ ALTER TABLE `tanggapan`
 -- AUTO_INCREMENT for table `tanggapan`
 --
 ALTER TABLE `tanggapan`
-  MODIFY `id_tanggapan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_tanggapan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Constraints for dumped tables

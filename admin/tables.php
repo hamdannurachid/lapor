@@ -197,6 +197,7 @@
                         <table class="table table-bordered" id="dataTable">
                             <thead>
                                 <tr>
+                                    <th>NIK</th>
                                     <th>Nama</th>
                                     <th>Email</th>
                                     <th>Telpon</th>
@@ -230,6 +231,7 @@
         }
 ?>
                                 <tr>
+                                    <td><?php echo $key['nik']; ?></td>
                                     <td><?php echo $key['nama']; ?></td>
                                     <td><?php echo $key['email']; ?></td>
                                     <td><?php echo $key['telpon']; ?></td>
@@ -290,6 +292,9 @@
                         <h5 class="modal-title text-center">Detail Laporan</h5>
                     </div>
                     <div class="modal-body">
+                        <p class="custom"><b>NIK :</b></p>
+                        <p class="custom"><?php echo $key['nik']; ?></p>
+                        <hr class="custom">
                         <p class="custom"><b>Nama :</b></p>
                         <p class="custom"><?php echo $key['nama']; ?></p>
                         <hr class="custom">

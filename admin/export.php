@@ -204,6 +204,7 @@ logged_admin ();
                             <thead>
                                 <tr>
                                     <th>Nama</th>
+                                    <th>NIK</th>
                                     <th>Email</th>
                                     <th>Telpon</th>
                                     <th>Alamat</th>
@@ -235,6 +236,7 @@ logged_admin ();
                                     ?>
                                     <tr>
                                         <td><?php echo $key['nama']; ?></td>
+                                        <td><?php echo $key['nik']; ?></td>
                                         <td><?php echo $key['email']; ?></td>
                                         <td><?php echo $key['telpon']; ?></td>
                                         <td><?php echo $key['alamat']; ?></td>

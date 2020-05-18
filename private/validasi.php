@@ -9,12 +9,13 @@
 	require_once("database.php");
 	header("Location: ../index?status=success");
 	// Atasi Undefined
-	$nama = $email = $telpon = $alamat = $pengaduan = $captcha = $is_valid = "";
-	$namaError = $emailError = $telponError = $alamatError = $pengaduanError = $captchaError = "";
+	$nama = $nik = $email = $telpon = $alamat = $pengaduan = $captcha = $is_valid = "";
+	$namaError = $nikError = $emailError = $telponError = $alamatError = $pengaduanError = $captchaError = "";
 
     if (isset($_POST['submit'])){
         $nomor     = $_POST['nomor'];
         $nama      = $_POST['nama'];
+        $nik      = $_POST['nik'];
         $email     = $_POST['email'];
         $telpon    = $_POST['telpon'];
         $alamat    = $_POST['alamat'];
@@ -25,10 +26,11 @@
         validate_input();
 
         if ($is_valid) {
-			$sql = "INSERT INTO `laporan` (`id`, `nama`, `email`, `telpon`, `alamat`, `tujuan`, `isi`, `tanggal`, `status`) VALUES (:nomor, :nama, :email, :telpon, :alamat, :tujuan, :isi, CURRENT_TIMESTAMP, :status)";
+			$sql = "INSERT INTO `laporan` (`id`, `nama`, `nik`, `email`, `telpon`, `alamat`, `tujuan`, `isi`, `tanggal`, `status`) VALUES (:nomor, :nama, :nik, :email, :telpon, :alamat, :tujuan, :isi, CURRENT_TIMESTAMP, :status)";
 			$stmt = $db->prepare($sql);
 			$stmt->bindValue(':nomor', $nomor);
 			$stmt->bindValue(':nama', $nama);
+			$stmt->bindValue(':nik', $nik);
 			$stmt->bindValue(':email', $email);
 			$stmt->bindValue(':telpon', $telpon);
 			$stmt->bindValue(':alamat', htmlspecialchars($alamat));
@@ -39,14 +41,17 @@
 			$stmt->execute();
 			header("Location: ../index?status=success");
         } elseif (!$is_valid) {
-            header("Location: ../lapor.php?nomor=$nomor&nama=$nama&namaError=$namaError&email=$email&emailError=$emailError&telpon=$telpon&telponError=$telponError&alamat=$alamat&alamatError=$alamatError&pengaduan=$pengaduan&pengaduanError=$pengaduanError&captcha=$captcha&captchaError=$captchaError");
+            header("Location: ../lapor.php?nomor=$nomor&nama=$nama&namaError=$namaError&&nik=$nik&nikError=$nikError&email=$email&emailError=$emailError&telpon=$telpon&telponError=$telponError&alamat=$alamat&alamatError=$alamatError&pengaduan=$pengaduan&pengaduanError=$pengaduanError&captcha=$captcha&captchaError=$captchaError");
         }
     }
 
+    
+
     // Fungsi Untuk Melakukan Pengecekan Dari Setiap Inputan Di Masing - masing Fungsi
     function validate_input() {
-        global $nama , $email , $telpon , $alamat , $pengaduan , $captcha , $is_valid;
+        global $nama , $nik, $email , $telpon , $alamat , $pengaduan , $captcha , $is_valid;
         cek_nama($nama);
+        cek_nik($nik);
         cek_email($email);
         cek_telpon($telpon);
         cek_alamat($alamat);
@@ -63,6 +68,21 @@
             $is_valid = false;
         } else { // jika nama valid kosongkan error
             $namaError = "";
+        }
+    }
+
+    // validasi telpon
+    function cek_nik($nik) {
+        global $nik, $nikError, $is_valid;
+        echo "cek_nik    : ", $nik    , "<br>";
+        if (!preg_match("/^[0-9]*$/",$nik)) { // cek nik hanya boleh angka
+            $nikError = "nik Hanya Boleh Angka";
+            $is_valid = false;
+        } elseif (strlen($nik) != 18) { // cek panjang nik harus >= 6
+            $nikError = "Panjang NIK Harus 18 Digit";
+            $is_valid = false;
+        } else { // jika nik valid kosongkan error
+            $nikError = "";
         }
     }
 

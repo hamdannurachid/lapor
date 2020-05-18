@@ -47,7 +47,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="index">
-                        <img alt="Brand" src="images/bangkalan.png">
+                        <img alt="Brand" src="images/smd/logo1.png">
                     </a>
                 </div>
 
@@ -68,10 +68,12 @@
                                 <li><a href="profildinas">Struktur Organisasi</a></li>
                                 <li class="divider"></li>
                                 <li><a href="profildinas">Motto / Maklumat Pelayanan</a></li>
+                                <li class="divider"></li>
+                                    <li><a href="profildinas">Peta Lokasi</a></li>
                             </ul>
                         </li>
-                        <li><a href="faq">FAQ</a></li>
-                        <li><a href="bantuan">BANTUAN</a></li>
+                        <!-- <li><a href="faq">FAQ</a></li> -->
+                        <!-- <li><a href="bantuan">BANTUAN</a></li> -->
                         <li><a href="kontak">KONTAK</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -104,6 +106,16 @@
                                     <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Lengkap" value="<?= @$_GET['nama'] ?>" required>
                                 </div>
                                 <p class="error"><?= @$_GET['namaError'] ?></p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="nik" class="col-sm-3 control-label">NIK</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                                    <input type="text" class="form-control" id="nik" name="nik" placeholder="NIK" value="<?= @$_GET['nik'] ?>" required>
+                                </div>
+                                <p class="error"><?= @$_GET['nikError'] ?></p>
                             </div>
                         </div>
                         <div class="form-group">
@@ -234,8 +246,8 @@
                         </li>
                     </ul>
                     <p class="mb-0">
-                        Jalan Soekarno-Hatta No 50
-                        <br>Bangkalan, Jawa Timur
+                        Jl. Pendopo Tegal Kalong No.1,
+                        <br>Talun, Kec. Sumedang Utara, Kabupaten Sumedang, Jawa Barat 45621
                     </p>
                 </div>
                 <div class="col-md-4 mb-5 mb-lg-0">
@@ -249,13 +261,13 @@
                     </ul>
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item">
-                            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/dispendukcapilbkl/">
+                            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/people/Kecamatan-Sumedang-Utara/100011406685555">
                                 <i class="fa fa-fw fa-facebook"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/disdukcapilbkl">
-                                <i class="fa fa-fw fa-twitter"></i>
+                            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.youtube.com/channel/UCgjKqp2w_P8J0JMhs5mZX8g">
+                                <i class="fa fa-fw fa-youtube"></i>
                             </a>
                         </li>
                     </ul>
@@ -270,9 +282,9 @@
                         </li>
                     </ul>
                     <p class="mb-0">
-                        031-3095331 <br>
-                        dispendukcapil@bangkalankab.go.id <br>
-                        dispendukcapil.bangkalan@gmail.com
+                        (0261) 201632 <br>
+                        kec.sumedang.utara@gmail.com <br>
+                        Senin - Jumat: 9:00 AM to 5:00 PM
                     </p>
                 </div>
             </div>
@@ -281,7 +293,7 @@
 
         <div class="copyright py-4 text-center text-white">
             <div class="container">
-                <small>v-6.0 | Copyright &copy; Dispendukcapil Bangkalan 2018</small>
+                <small>Copyright &copy; Kecamatan Sumedang Utara 2020</small>
             </div>
         </div>
         <!-- shadow -->

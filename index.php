@@ -23,7 +23,7 @@ function RandomAvatar(){
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Kecamatan Sumedang Utara</title>
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/smd/logo1.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- font Awesome CSS -->
